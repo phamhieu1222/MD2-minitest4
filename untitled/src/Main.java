@@ -29,7 +29,7 @@ public class Main {
                 totalpart += employees[i].SalaryCalculator();
             }
         }
-        System.out.println("\n💰 Total Partime salary: " + totalpart);
+        System.out.println("\n Total Partime salary: " + totalpart);
         for (int i = 0; i < n - 1; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (employees[i] instanceof FulltimeEmployee &&
