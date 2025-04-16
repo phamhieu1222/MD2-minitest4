@@ -16,7 +16,7 @@ public class FulltimeEmployee extends Employee {
         return salary - fine + bonus;
     }
 
-public String toString(){
-    return super.toString() + " FulltimeEmployee " + SalaryCalculator() ;
-}
+    public String toString() {
+        return super.toString() + " FulltimeEmployee " + SalaryCalculator();
+    }
 }

@@ -13,13 +13,16 @@ public abstract class Employee {
         this.email = email;
         this.id = id;
     }
-public double SalaryCalculator() {
+
+    public double SalaryCalculator() {
         return 0;
-}
-public String getName() {
+    }
+
+    public String getName() {
         return name;
-}
-public String toString(){
-        return "Name: " + name + " id: "+id;
-}
+    }
+
+    public String toString() {
+        return "Name: " + name + " id: " + id+ "email" + email + " age" + age + " phone" + phone;
+    }
 }

@@ -11,24 +11,18 @@ public class Main {
         FulltimeEmployee f3 = new FulltimeEmployee(6, "F", 15, 25159951, "e@gmail.com", 5200, 5600, 50000);
         Employee[] employees = new Employee[]{p1, p2, p3, f1, f2, f3};
         int n = employees.length;
-
-
         double sum = 0;
         for (int i = 0; i < n; i++) {
             sum += employees[i].SalaryCalculator();
         }
         double avg = sum / n;
         System.out.println("Average Salary: " + avg);
-
-
         System.out.println("\nFulltime Employees under average salary: ");
         for (int i = 0; i < n; i++) {
             if (employees[i] instanceof FulltimeEmployee && employees[i].SalaryCalculator() < avg) {
                 System.out.println(employees[i]);
             }
         }
-
-
         double totalpart = 0;
         for (int i = 0; i < n; i++) {
             if (employees[i] instanceof ParttimeEmployee) {
@@ -36,8 +30,6 @@ public class Main {
             }
         }
         System.out.println("\n💰 Total Partime salary: " + totalpart);
-
-
         for (int i = 0; i < n - 1; i++) {
             for (int j = i + 1; j < n; j++) {
                 if (employees[i] instanceof FulltimeEmployee &&

@@ -13,8 +13,9 @@ public class ParttimeEmployee extends Employee {
     public double SalaryCalculator() {
         return time * 100000;
     }
+
     public String toString() {
-        return super.toString() + " ParttimeEmployee " + SalaryCalculator() ;
+        return super.toString() + " ParttimeEmployee " + SalaryCalculator();
     }
 
 }
